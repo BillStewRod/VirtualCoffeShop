@@ -1,0 +1,5 @@
+Pillow==9.2.0
+streamlit==1.12.0
+altair==4.1.0
+vega==3.4.0
+vega_datasets==0.9.0
