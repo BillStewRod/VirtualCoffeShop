@@ -6,6 +6,7 @@ st.title("Hello, welcome to Mandingo's Coffee!!!!!!!!!!!!!!")
 
 #Ask your customer 
 #name = input("What is your name?\n")
+st.text_input(__name__, value="What is your name?", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False, label_visibility="hidden")
 #or name == "YES" or name == "yES" 
 #Greet the customer with their name and thank them for coming in today using concatenation.
 #if name == "Alison" or name == "alison" or name =="ALISON" or name =="aLISON":
