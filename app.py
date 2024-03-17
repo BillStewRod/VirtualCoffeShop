@@ -1,10 +1,10 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Virtula Barista",
+    page_title="Virtual Barista",
     page_icon=":coffee:"
 )
-#This is Mandingo's Coffe Shop
+#This is Mandingo's Coffee Shop
 #Greet your customer
 st.title("Virtual Coffee Shop!")
 st.header("Hello, welcome to My Coffee Shop!")
@@ -47,7 +47,7 @@ st.text_input(__name__, value="What is your name?\n", max_chars=None, key=None, 
 #  exit()
   
 #Coffee menu
-#menu = " Black Coffee\n Americano\n Espresso\n Latte\n Cappucino\n Frappuccino\n Flat White\n Cafecito\n"
+#menu = " Black Coffee\n Americano\n Espresso\n Latte\n Cappuccino\n Frappuccino\n Flat White\n Cafecito\n"
 
 #Ask the customer what they would like from the menu and store it in the variable order.
 #order = input(name + ", what would you like from our menu today? Here is what we are serving.\n" + menu + "\n")
@@ -60,7 +60,7 @@ st.text_input(__name__, value="What is your name?\n", max_chars=None, key=None, 
 #"Americano": 6,
 #"Espresso": 8,
 #"Latte": 9,
-#"Cappucino": 10,
+#"Cappuccino": 10,
 #"Frappuccino": 13,
 #"Flat White": 9,
 #"Cafecito": 10
