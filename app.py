@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import streamlit as st
-from PIL import Image
+#from PIL import Image
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -10,7 +10,7 @@ css_file = current_dir / "styles" / "main.css"
 # --- LOAD CSS ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-    
+
 st.set_page_config(
     page_title="Virtual Barista",
     page_icon=":coffee:"
