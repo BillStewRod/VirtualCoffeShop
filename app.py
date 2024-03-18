@@ -45,7 +45,7 @@ else:
   st.write("Get out, and come back when you have a beard longer than 2 inch!!")
 
 #Coffee menu
-menu = ":coffee: Black Coffee $5, :coffee: Americano $6, :coffee: Espresso $8, :coffee: Latte $9, :coffee: Cappuccino $10, :coffee: Frappuccino $11, :coffee: Flat White $9, :coffee: Cafecito $200"
+menu = "Black Coffee $5, Americano $6, Espresso $8, Latte $9, Cappuccino $10, Frappuccino $11, Flat White $9, Cafecito $200"
 menu_list = menu.split(", ")
 
 # Display the menu as a list
