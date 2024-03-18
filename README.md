@@ -1,4 +1,4 @@
-#Virtual Coffee Barista
+##Virtual Coffee Barista
 
 This is a fun little project that i created. Is a virtual Coffee Barista athat you can order you coffee, with a twist.
 
