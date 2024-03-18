@@ -44,7 +44,7 @@ if beard_length >= 2:
 else:
   st.write("Get out, and come back when you have a beard longer than 2 inch!!")
 
-st.write("Below is our menu")
+st.subheader("Below is our menu:")
 
 #Coffee menu
 menu = "Black Coffee $5, Americano $6, Espresso $8, Latte $9, Cappuccino $10, Frappuccino $11, Flat White $9, Cafecito $200, Cafe con Leche $300"
