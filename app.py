@@ -7,7 +7,8 @@ css_file = current_dir / "styles" / "main.css"
 
 # --- LOAD CSS ---
 with open(css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+    st.markdown("<style>{}</style>".format(f.read()))
+#,unsafe_allow_html=True
 
 st.header(":coffee: Mazinger Virtual Coffee Shop!:coffee:")
 
