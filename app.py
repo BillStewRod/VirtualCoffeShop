@@ -45,7 +45,7 @@ else:
   st.write("Get out, and come back when you have a beard longer than 2 inch!!")
 
 #Coffee menu
-menu = "Black Coffee $5, Americano $6, Espresso $8, Latte $9, Cappuccino $10, Frappuccino $11, Flat White $9, Cafecito $200"
+menu = "Black Coffee $5, Americano $6, Espresso $8, Latte $9, Cappuccino $10, Frappuccino $11, Flat White $9, Cafecito $200, Cafe con Leche $300"
 menu_list = menu.split(", ")
 
 # Display the menu as a list
@@ -59,14 +59,15 @@ order = st.selectbox(f"{st.session_state['name']}, what would you like from our 
 quantity =  st.number_input("How many coffees would you like?", min_value=1)
 
 prices = {
-"Black Coffee": 5,
-"Americano": 6,
-"Espresso": 8,
-"Latte": 9,
-"Cappuccino": 10,
-"Frappuccino": 13,
-"Flat White": 9,
-"Cafecito": 200
+"Black Coffee $5": 5,
+"Americano $6": 6,
+"Espresso $8": 8,
+"Latte $9": 9,
+"Cappuccino $10": 10,
+"Frappuccino $13": 13,
+"Flat White $9": 9,
+"Cafecito $200": 200,
+"Cafe con Leche $300": 300
 }
 
 # Check if the order is in the menu
