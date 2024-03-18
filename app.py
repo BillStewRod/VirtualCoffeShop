@@ -44,6 +44,8 @@ if beard_length >= 2:
 else:
   st.write("Get out, and come back when you have a beard longer than 2 inch!!")
 
+st.write("Below is our menu")
+
 #Coffee menu
 menu = "Black Coffee $5, Americano $6, Espresso $8, Latte $9, Cappuccino $10, Frappuccino $11, Flat White $9, Cafecito $200, Cafe con Leche $300"
 menu_list = menu.split(", ")
@@ -53,7 +55,7 @@ for item in menu_list:
     st.write(item)
 
 #Ask the customer what they would like from the menu and store it in the variable order.
-order = st.selectbox(f"{st.session_state['name']}, what would you like from our menu today?", menu_list)
+order = st.selectbox(f"{st.session_state['name']}, what can i make you today?", menu_list)
 
 #Ask the customer how many coffees they would like and store it in the variable QUANTITY
 quantity =  st.number_input("How many coffees would you like?", min_value=1)
