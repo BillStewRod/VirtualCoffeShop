@@ -22,11 +22,11 @@ if st.session_state['name'].lower() == "alison":
     else:
         evil_status = st.text_input("Are you sure?")
         if evil_status.lower() == "no":
-            st.write("You're not welcome here " + st.session_state['name'] + "!! Get out!!")
+            st.write(f"You're not welcome here {st.session_state['name']}!! Get out!!")
         else:
             st.write("Oh, so you must be one of the good not evil Alison, I guess you can come in. But wait...")
 else:
-    st.write("Hello " + st.session_state['name'] + ", thank you so much for coming in today.")
+    st.write(f"Hello, {st.session_state['name']}, thank you so much for coming in today.")
 
 # Initialize beard_length
 beard_length = 0
@@ -53,7 +53,7 @@ for item in menu_list:
     st.write(item)
 
 #Ask the customer what they would like from the menu and store it in the variable order.
-order =  st.text_input(f"{st.session_state['name']}, what would you like from our menu today?")
+order = st.selectbox(f"{st.session_state['name']}, what would you like from our menu today?", menu_list)
 
 #Ask the customer how many coffees they would like and store it in the variable QUANTITY
 quantity =  st.number_input("How many coffees would you like?", min_value=1)
