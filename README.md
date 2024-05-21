@@ -9,4 +9,4 @@ Also she likes beards as long as they are 2 inches or longer in length.
 This project started when i was learning Python using the[NetworkChuckAcademy](https://learn.networkchuck.com/)  where he teaches how to write code creating a simple virtual barista. From there i kept making adjustments and additions. Then converted to work as a web app using Streamlit, and host in Heroku.
 
 ### Live Demo
-https://virtualcoffeeshop-8cb2c5ab6d16.herokuapp.com/
+
