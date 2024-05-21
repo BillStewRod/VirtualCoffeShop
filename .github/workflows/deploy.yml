@@ -9,12 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Build with Jekyll
-        run: |
-          jekyll build --config=_config.yml,_config_deploy.yml --no-scss
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Build with Jekyll
+        run: |
+          jekyll build --config=_config.yml,_config_deploy.yml --no-scss
       - name: Deploy to GitHub Pages
         uses: gh-pages/deploy@v1
