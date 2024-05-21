@@ -32,8 +32,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y build-essential cmake ninja-build gcc g++ libffi-dev
-        sudo ln -s /usr/bin/gcc /usr/bin/cc
-        sudo ln -s /usr/bin/g++ /usr/bin/c++
+        if [ ! -f /usr/bin/cc ]; then sudo ln -s /usr/bin/gcc /usr/bin/cc; fi
+        if [ ! -f /usr/bin/c++ ]; then sudo ln -s /usr/bin/g++ /usr/bin/c++; fi
 
     - name: Install Python Dependencies
       run: |
