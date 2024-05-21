@@ -1,1 +1,1 @@
-web: sh deploy.sh && streamlit run main.py
+web: streamlit run main.py
