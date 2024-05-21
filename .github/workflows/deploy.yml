@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Build with Jekyll
+        run: |
+          jekyll build --config=_config.yml,_config_deploy.yml --no-scss
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies
