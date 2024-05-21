@@ -18,15 +18,15 @@ if st.session_state['name'].lower() == "alison":
     evil_status = st.text_input("Are you evil?")
     good_deeds = st.number_input("How many good deeds have you done today?", min_value=0)
     if evil_status.lower() == "yes" and good_deeds < 4:
-        st.write("You're not welcome here Alison!! Get out!!")
+        st.markdown("You're not welcome here Alison!! Get out!!")
     else:
         evil_status = st.text_input("Are you sure?")
         if evil_status.lower() == "no":
-            st.write(f"You're not welcome here {st.session_state['name']}!! Get out!!")
+            st.markdown(f"You're not welcome here {st.session_state['name']}!! Get out!!")
         else:
-            st.write("Oh, so you must be one of the good not evil Alison, I guess you can come in. But wait...")
+            st.markdown("Oh, so you must be one of the good not evil Alison, I guess you can come in. But wait...")
 else:
-    st.write(f"Hello, {st.session_state['name']}, thank you so much for coming in today.")
+    st.markdown(f"Hello, {st.session_state['name']}, thank you so much for coming in today.")
 
 # Initialize beard_length
 beard_length = 0
@@ -34,15 +34,15 @@ beard_length = 0
 #Ask if the person has a beard
 has_beard = st.text_input("Do you have a beard?")
 if has_beard.lower() == "no":
-  st.write("Get out, and come back when you grow one!!")
+  st.markdown("Get out, and come back when you grow one!!")
 else:
   beard_length = st.number_input("Nice beard, How Long is it?", min_value=0)
 
 #How long is the beard
 if beard_length >= 2:
-  st.write("You can go in to the front of the line")
+  st.markdown("You can go in to the front of the line")
 else:
-  st.write("Get out, and come back when you have a beard longer than 2 inch!!")
+  st.markdown("Get out, and come back when you have a beard longer than 2 inch!!")
 
 st.subheader("Below is our menu:")
 
@@ -52,7 +52,7 @@ menu_list = menu.split(", ")
 
 # Display the menu as a list
 for item in menu_list:
-    st.write(item)
+    st.markdown(item)
 
 #Ask the customer what they would like from the menu and store it in the variable order.
 order = st.selectbox(f"{st.session_state['name']}, what can i make you today?", menu_list)
@@ -74,13 +74,13 @@ prices = {
 
 # Check if the order is in the menu
 if order not in prices:
-    st.write("Sorry, that item is not on the menu. Please choose from above menu:")
+    st.markdown("Sorry, that item is not on the menu. Please choose from above menu:")
 else:
     #Calculate the customer's total
     total = prices[order] * quantity
 
     #Give the customer their total
-    st.write(f"Sounds good {st.session_state['name']}! Thank You for your order. Your total is: ${total}")
+    st.markdown(f"Sounds good {st.session_state['name']}! Thank You for your order. Your total is: ${total}")
 
     #Final statement
-    st.write(f"We'll have your {quantity} :coffee: {order} ready for you in a moment.")
+    st.markdown(f"We'll have your {quantity} :coffee: {order} ready for you in a moment.")
