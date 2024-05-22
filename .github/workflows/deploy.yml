@@ -15,6 +15,6 @@ jobs:
         run: pip install -r requirements.txt
       - name: Build with Jekyll
         run: |
-          jekyll build --config=_config.yml,_config_deploy.yml --no-scss
+          jekyll build --config=_config.yml,_config_deploy.yml --no-scss --no-converter-scss --sass=none
       - name: Deploy to GitHub Pages
         uses: gh-pages/deploy@v1
