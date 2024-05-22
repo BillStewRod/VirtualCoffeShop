@@ -35,6 +35,7 @@ jobs:
         with:
           source: ./
           destination: ./_site
+          jekyll-version: '3.9.5'  # Specify the Jekyll version you want to use
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
@@ -49,3 +50,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          timeout-minutes: 30  # Set the deployment timeout to 30 minutes
