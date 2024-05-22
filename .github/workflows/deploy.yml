@@ -17,4 +17,4 @@ jobs:
         run: |
           jekyll build --config=_config.yml,_config_deploy.yml --no-scss --no-converter-scss --sass=none
       - name: Deploy to GitHub Pages
-        uses: github-pages/deploy@v1
+        uses: github-pages/deploy
