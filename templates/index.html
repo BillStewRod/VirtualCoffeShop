@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mazinger Virtual Coffee Shop</title>
+</head>
+<body>
+    <h1>☕ Mazinger Virtual Coffee Shop! ☕</h1>
+    
+    <form method="post">
+        <p>{{ question }}</p>
+        
+        {% if step == 0 %}
+            <input type="text" name="name" required><br><br>
+        
+        {% elif step == 1 %}
+            <input type="text" name="evil_status" required><br><br>
+        
+        {% elif step == 2 %}
+            <input type="number" name="good_deeds" min="0" required><br><br>
+        
+        {% elif step == 3 %}
+            <input type="text" name="evil_status_confirm" required><br><br>
+        
+        {% elif step == 4 %}
+            <input type="text" name="has_beard" required><br><br>
+        
+        {% elif step == 5 %}
+            <input type="number" name="beard_length" min="0" required><br><br>
+        
+        {% elif step == 6 %}
+            <select name="order" required>
+                {% for item in menu %}
+                    <option value="{{ item.name }}">{{ item.name }} - ${{ item.price }}</option>
+                {% endfor %}
+            </select><br><br>
+        {% elif step == 6 %}
+            <select name="order" required>
+                {% for item in menu %}
+                    <option value="{{ item.name }}">{{ item.name }} - ${{ item.price }}</option>
+                {% endfor %}
+            </select><br><br>
+        
+        {% elif step == 7 %}
+            <input type="number" name="quantity" min="1" required><br><br>
+        
+        {% endif %}
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    
+    {% if show_reset %}
+        <form method="post">
+            <button type="submit" name="reset">Reset</button>
+        </form>
+    {% endif %}
+</body>
+</html>
