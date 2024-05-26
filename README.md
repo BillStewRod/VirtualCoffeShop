@@ -6,6 +6,7 @@ For some reason the Barista hates anyone with the name Alison, she thinks they a
 
 Also she likes beards as long as they are 2 inches or longer in length.
 
-This project started when i was learning Python using the[NetworkChuckAcademy](https://learn.networkchuck.com/)  where he teaches how to write code creating a simple virtual barista. From there i kept making adjustments and additions. Then converted to work as a web app using Streamlit, and host in Heroku.
+This project started when i was learning Python using the [NetworkChuckAcademy](https://learn.networkchuck.com/)  where he teaches how to write code creating a simple virtual barista. From there i kept making adjustments and additions. Then converted to work as a web app using [Flask](https://flask.palletsprojects.com/en/3.0.x/), host on [Render](https://render.com) using the free tier and [Cron-Job](https://cron-job.org/en/) to keep website from going to sleep.
 
 ### Live Demo
+https://virtual-coffee-shop.onrender.com
